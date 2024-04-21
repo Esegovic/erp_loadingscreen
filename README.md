@@ -1,3 +1,4 @@
+![ERP Loadingscreen](https://cdn.discordapp.com/attachments/859872973002113104/1231610745255628870/loadingscreen.png?ex=663795e3&is=662520e3&hm=fb514d55728c67529656a804053c1f118fa10ab3f8566143847aa77942cbc6df&)
 # ERP Loadingscreen
 
 ## Description
