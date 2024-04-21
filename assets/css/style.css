@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans&family=Orbitron:wght@600&display=swap');
+body {
+  overflow: hidden;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.19509810760241597) 0%, rgba(0,0,0,0.19789922805059523) 30%, rgba(0,0,0,0.19789922805059523) 73%, rgba(255,74,74,0.1390756986388305) 100%);
+}
+
+#server_logo {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-filter: drop-shadow(1vw 1vw 1vw #000000);
+  filter: drop-shadow(1vw 1vw 1vw #000000);
+}
+
+#cursor {
+  position: fixed;
+  width: 1.5vw;
+  z-index: 99999999999;
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.loadbar {
+  width: 90%;
+  height: 8px;
+  background-color: rgba(255, 74, 74, 0.17);
+  margin: 5px 3px;
+  overflow: hidden;
+  position: fixed;
+  left: 5%;
+  bottom: 8%;
+  display: block;
+  opacity: 0.8;
+  border-radius: 1px;
+}
+
+.progressBar {
+  width: 10%;
+  background-color: #ff4a4a;
+  height: 20px;
+  position: absolute;
+  left: 10%;
+}
+
+
+
+
+#fullscreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 4%;
+  left: 0%;
+  display: flex;
+  font-size: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+  
+@keyframes arrows {
+  0%,
+  100% {
+    color: black;
+    transform: translateY(0);
+  }
+  50% {
+    color: #ff4a4a;
+    transform: translateY(5px);
+  }
+}
+  
+
+
+#download-icon {
+  position: absolute;
+  bottom: 8%;
+  left: 5.3%;
+  width: 0.8%;
+  opacity: 0.8;
+  animation: arrows 1s var(--delay) infinite ease-in;
+  filter: invert(100%);
+}
+
+.random_text {
+  position: absolute;
+  bottom: 11.5%;
+  left:6.5%;
+  width: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: first baseline;
+}
+
+#random-text1 {
+
+    color: white;
+    text-transform: uppercase;font-family: 'Orbitron', sans-serif;
+    font-size: 0.5vw;
+    opacity: 0.5;
+}
+#random-text2 {
+  margin-left: 0.1vw;
+    color: white;
+    text-transform: uppercase;font-family: 'Orbitron', sans-serif;
+    font-size: 0.5vw;
+}
+#left{
+    filter: invert(100%);
+    position: absolute;
+    top: 17%;
+    right: 14%;
+    width: 1%;
+    transition: .3s;   
+}
+
+#right {
+    filter: invert(100%);
+    position: absolute;
+    top: 17%;
+    right: 10%;
+    width: 1%;
+    transition: .3s;   
+}
+
+#pause {
+    filter: invert(100%);
+    position: absolute;
+    top: 17%;
+    right: 12%;
+    width: 1%;
+    transition: .3s;
+}
+
+.slidecontainer {
+    position: absolute;
+    top: 16.8%;
+    right: 5%;
+    width: 4vw;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #0a0a0aaf;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    cursor: default;
+  }
+
+  .slider:hover {
+    opacity: 1;
+    
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+#nameofsong {
+  color: white;
+  position: absolute;
+  top: 9%;
+  right: 5%;
+  width: 10%;
+  font-size: 0.7vw;
+  text-transform: uppercase;font-family: 'Orbitron', sans-serif; 
+}
+#songlabel {
+  width: 100%;
+  height: 100%;
+  font-size: auto!important;
+}
+
+#progress-b {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+  width: 10%;
+  background-color: #9e2b2b81;
+  height: 0.2vw;
+  border-radius: 0.2vw;
+}
+#progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  background-color: #ff4a4a;
+  height: 0.2vw;
+  border-radius: 0.2vw;
+}
+
+.bg {
+  position: fixed;
+  top: -10%;
+  left: -10%;
+  filter: blur(10px) grayscale(0%);
+  width: 120%;
+  height: 120%;
+  z-index: -1;
+
+}
+
+#left:hover, #right:hover, #pause:hover {
+  scale: 1.1;
+  transition: .3s;
+  opacity: 1;
+  filter: invert(47%) sepia(16%) saturate(2290%) hue-rotate(312deg) brightness(94%) contrast(120%);filter: invert(47%) sepia(16%) saturate(2290%) hue-rotate(312deg) brightness(94%) contrast(120%);
+}
